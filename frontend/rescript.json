@@ -3,7 +3,8 @@
   "sources": [
     {
       "dir": "src",
-      "subdirs": true
+      "subdirs": true,
+      "public": []
     }
   ],
   "package-specs": [
@@ -15,7 +16,11 @@
   "suffix": ".bs.mjs",
   "bs-dependencies": [
     "@rescript/react",
-    "@rescript/core"
+    "@rescript/core",
+    "shared"
+  ],
+  "pinned-dependencies": [
+    "shared"
   ],
   "jsx": {
     "version": 4,

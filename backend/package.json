@@ -1,23 +1,23 @@
 {
   "name": "backend",
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "nodemon src/Server.bs.js",
     "res:build": "rescript",
     "res:clean": "rescript clean",
-    "res:dev": "rescript build -w"
+    "res:dev": "rescript build -w",
+    "dev": "NODE_ENV=dev nodemon src/Server.bs.mjs",
+    "build": "node scripts/build.js"
   },
-  "keywords": [
-    "rescript"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "@fastify/websocket": "^8.2.0",
-    "@rescript/core": "^0.5.0",
-    "fastify": "^4.24.1",
-    "nodemon": "^3.0.1",
-    "rescript": "11.0.0-rc.4"
+    "@fastify/cors": "8.4.0",
+    "@fastify/static": "6.11.2",
+    "@fastify/websocket": "8.2.0",
+    "@rescript/core": "0.5.0",
+    "fastify": "4.24.1",
+    "rescript": "11.0.0-rc.4",
+    "shared": "workspace:*"
+  },
+  "devDependencies": {
+    "esbuild": "0.19.5",
+    "nodemon": "3.0.1"
   }
 }

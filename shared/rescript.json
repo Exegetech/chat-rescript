@@ -1,9 +1,9 @@
 {
-  "name": "backend",
+  "name": "shared",
   "sources": {
     "dir": "src",
     "subdirs": true,
-    "public": []
+    "public": ["Message"]
   },
   "package-specs": {
     "module": "es6",
@@ -11,8 +11,7 @@
   },
   "suffix": ".bs.mjs",
   "bs-dependencies": [
-    "@rescript/core",
-    "shared"
+    "@rescript/core"
   ],
   "bsc-flags": [
     "-open RescriptCore"
